@@ -10,5 +10,5 @@ Student.prototype.getFullName = function () {
 };
 
 Student.prototype.getIntroduction = function () {
-  return 'Hello, my name is Grady Booch and I am studying ' + this.subject + '.';
+  return 'Hello, my name is ' + this.firstName + ' ' + this.lastName + ' and I am studying ' + this.subject + '.';
 };

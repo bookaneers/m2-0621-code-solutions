@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+  color: rgb(20, 20, 20);
+  background-color: rgb(250, 250, 250);
+}
+
+.page-carousel {
+  padding: 5rem;
+}
+
+.carousel {
+  max-width: 780px;
+  padding: 3rem;
+  border: solid;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+
+
+  margin: 2rem auto;
+  display: column;
+  justify-content: space-evenly;
+}
+
+.iconsandarrows {
+  display: flex;
+  flex-grow: 3;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.dots {
+  display: flex;
+  padding: 0.5rem;
+}

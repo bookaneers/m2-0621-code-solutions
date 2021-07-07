@@ -10,19 +10,28 @@ function Account(number, holder) {
 
 Account.prototype.deposit = function(amount) {
   // if amount is not positive
-  if (!this.amount) return false;
+  if (!Number.isInteger(amount) || amount <= 0 || isNaN(amount)) {
+    return false;
+  }
   // if amount is positive
-  this.transactions.push(new Transaction('deposit', this.amount));
+  if (Number.isInteger(amount) && amount > 0) {
+  this.transactions.push(new Transaction('deposit', amount));
   return true;
+  }
 }
 
 Account.prototype.withdraw = function(amount) {
   // if amount is not positive
-  if (!this.amount) return false;
+  if (!Number.isInteger(amount) || amount <= 0 || isNaN(amount)) {
+    return false;
+  }
   // if amount is positive
-  this.transactions.push(new Transaction('withdrawal', this.amount));
-  return true;
+  if (Number.isInteger(amount) && amount > 0) {
+    this.transactions.push(new Transaction('withdrawal', amount));
+    return true;
+  }
 }
+
 Account.prototype.getBalance = function() {
   // if there are no funds available
   if (this.transactions.length === 0) return 0;
@@ -31,7 +40,7 @@ Account.prototype.getBalance = function() {
   var balance = 0;
   // iterate over array transactions
   for(var i = 0; i < this.transactions.length; i++) {
-    // if transactio is a deposit, add to balance
+    // if transaction is a deposit, add to balance
     if (this.transactions[i].type === 'deposit') {
       balance = balance + this.transactions[i].amount;
     } else { // if transactio is a withdraw, subtract from balance

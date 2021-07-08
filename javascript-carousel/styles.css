@@ -11,30 +11,40 @@ body {
 }
 
 .page-carousel {
-  padding: 5rem;
 }
 
 .carousel {
-  max-width: 780px;
-  padding: 3rem;
+  max-width: 992px;
+  padding: 1rem;
   border: solid;
   border-top-right-radius: 0.25rem;
   border-top-left-radius: 0.25rem;
-
-
   margin: 2rem auto;
   display: column;
-  justify-content: space-evenly;
 }
 
 .iconsandarrows {
   display: flex;
-  flex-grow: 3;
   align-items: center;
-  padding: 0.5rem;
+  justify-content: center;
+}
+
+.pokemon {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.leftarrow, .rightarrow {
+  font-size: 68px;
+  text-align:space-between;
 }
 
 .dots {
   display: flex;
   padding: 0.5rem;
+  justify-content: center;
+}
+
+.dot1, .dot2, .dot3, .dot4, .dot5{
+  padding: .5rem;
 }

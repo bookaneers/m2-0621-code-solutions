@@ -29,7 +29,7 @@ body {
   justify-content: center;
 }
 
-.pokemon {
+#pokemon {
   margin-left: 150px;
   margin-right: 150px;
 }
@@ -37,14 +37,16 @@ body {
 .leftarrow, .rightarrow {
   font-size: 68px;
   text-align:space-between;
+  cursor: pointer;
 }
 
 .dots {
   display: flex;
   padding: 0.5rem;
   justify-content: center;
+  cursor: pointer;
 }
 
-.dot1, .dot2, .dot3, .dot4, .dot5{
+.dots i {
   padding: .5rem;
 }

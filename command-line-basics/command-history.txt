@@ -1,0 +1,59 @@
+
+  434  cd ~/repos
+  435  cd command-line-basics
+  436  dir
+  437  cd m2-0621-code-solutions/
+  438  cd command-line-basics
+  439  pwd
+  440  man man
+  441  cat
+  442  ls
+  443  man cat
+  444  cat laziness.txt impatience.txt hubris.txt
+  445  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  446  ls
+  447  man ls
+  448  ls -a
+  449  ls -F
+  450  ls lfz-staff/
+  451  ls -aF lfz-staff > lfz-staff/contents.txt
+  452  cat lfz-staff/contents.txt
+  453  man pwd
+  454  pwd
+  455  pwd > i-was-here.txt
+  456  ls
+  457  man echo
+  458  echo 'Hello, World!'
+  459  echo 'Hello, World!' > hello.txt
+  460  ls
+  461  man touch
+  462  touch tag-youre-it.txt
+  463  touch snoot/boop.txt
+  464  ls
+  465  ls snoot/
+  466  man mkdir
+  467  mkdir parent
+  468  ls
+  469  mkdi parent/child/grandchild
+  470  mkdir parent/child/grandchild
+  471  man mkdir
+  472  mkdir -p parent/child/grandchild
+  473  ls
+  474  touch parent/.gitkeep
+  475  touch parent/child/.gitkeep
+  476  touch parent/child/parent/.gitkeep
+  477  touch parent/child/grandchild/.gitkeep
+  478  ls -a
+  479  man mv
+  480  mv pokiemans pokemon
+  481  ls
+  482  rm lol.txt
+  483  ls
+  484  rm -r kill-me/
+  485  ls
+  486  man cp
+  487  cp and-then.txt no-and-then.txt
+  488  ls
+  489  cat and-then.txt no-and-then.txt
+  490  history
+  491  history > command-history.txt

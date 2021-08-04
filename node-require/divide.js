@@ -1,5 +1,5 @@
 function divide(x, y) {
-  return parseInt(x) / parseInt(y);
+  return Number(x) / Number(y);
 }
 
 module.exports.divide = divide;

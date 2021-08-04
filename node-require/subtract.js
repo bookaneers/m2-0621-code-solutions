@@ -1,5 +1,5 @@
 function subtract(x, y) {
-  return parseInt(x) - parseInt(y);
+  return Number(x) - Number(y);
 }
 
 module.exports.subtract = subtract;

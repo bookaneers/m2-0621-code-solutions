@@ -1,4 +1,437 @@
 
+    1  exit
+    2  whoami
+    3  git config --global user.name "Fernando Figueiredo"
+    4  git config --global user.email "bookaneers@gmail.com"
+    5  git config --global --list
+    6  exit
+    7  git config --global --list
+    8  exit
+    9  ls
+   10  cd ~/repos
+   11  git clone git@github.com:bookaneers/m2-0621-code-solutions.git
+   12  ls
+   13  exit
+   14  cd ~\repos
+   15  cd ~/repos
+   16  ls
+   17  m2-0621-code-solutions/
+   18  ls
+   19  cd m2-0621-code-solutions/
+   20  pwd
+   21  clear
+   22  pwd
+   23  git status
+   24  git switch master
+   25  git pull origin master
+   26  git branch javascript-custom-methods
+   27  git branch --list
+   28  git switch javascript-custom-methods
+   29  git status
+   30  git add .
+   31  git status
+   32  git commit -m "Completed javascript-custom-methods."
+   33  git push origin javascript-custom-methods
+   34  git checkout master
+   35  git status
+   36  git switch mastet
+   37  git switch master
+   38  git pull origin master
+   39  git branch javascript-this
+   40  git branch --list
+   41  git switch javascript-this
+   42  git status
+   43  git add .
+   44  git commit -m "Completed javascript-this."
+   45  git status
+   46  git push origin javascript-this
+   47  git checkout master
+   48  git pull origin master
+   49  git status
+   50  git branch javascript-prototypes
+   51  git branch --list
+   52  git switch javascript-prototypes
+   53  git status
+   54  git add .
+   55  git commit -m "Completed javascript-prototypes."
+   56  git git push origin javascript-prototypes
+   57  git push origin javascript-prototypes
+   58  git checkout master
+   59  git status
+   60  git pull origin master
+   61  git status
+   62  git branch javascript-constructors
+   63  git branch --list
+   64  git switch javascript-constructors
+   65  git status
+   66  git add .
+   67  git commit -m "Completed javascript-constructors."
+   68  git push origin javascript-constructors
+   69  git checkout master
+   70  git status
+   71  git branch javascript-bank
+   72  git -- list
+   73  git branch --list
+   74  git switch javascript-bank
+   75  pwd
+   76  git switch master
+   77  git switch javascript-constructors
+   78  git status
+   79  git add .
+   80  git commit -m "Corrected student name."
+   81  git push origin javascript-constructors
+   82  git status
+   83  git checkpout master
+   84  git checkoput master
+   85  git checkout master
+   86  git status
+   87  git pull origin master
+   88  git status
+   89  exit
+   90  cd ~/repos
+   91  cd m2-0621-code-solutions/
+   92  git status
+   93  git branch --list
+   94  git status
+   95  git switch javascript-bank
+   96  git status
+   97  git checkout master
+   98  git pull origin master
+   99  git checkout javascript-bank
+  100  git switch master
+  101  git switch javascript-constructor
+  102  git status
+  103  git switch master
+  104  git pull origin master
+  105  git status
+  106  git checkout javascript-bank
+  107  git status
+  108  git add .
+  109  git commit -m "Completed half of javascript-bank."
+  110  git status
+  111  git checkout master
+  112  exit
+  113  cd ~/repos
+  114  cd m2-0621-code-solutions/
+  115  git status
+  116  git branch --list
+  117  git switch javascript-bank
+  118  git status
+  119  git add .
+  120  git commit -m "Completed structure in javascript-bank."
+  121  git status
+  122  exit
+  123  cd ~/repos
+  124  cd m2-0621-code-solutions/
+  125  git status
+  126  git switch master
+  127  git status
+  128  git branch --list
+  129  git branch javascript-timers
+  130  git branch --list
+  131  git switch javascript-timers
+  132  git status
+  133  git add .
+  134  git commit -m "Completed javascript-timers."
+  135  git push origin javascript-timers
+  136  git switch master
+  137  git pull origin master
+  138  git switch javascript-bank
+  139  git status
+  140  git add .
+  141  git commit -m "Completed javascript-bank."
+  142  git status
+  143  git push origin javascript-bank
+  144  git switch master
+  145  git pull origin master
+  146  exit
+  147  cd ~/repos
+  148  cd m2-0621-code-solutions/
+  149  git status
+  150  git pull origin master
+  151  git branch --list
+  152  git branch javascript-carousel
+  153  git branch --list
+  154  git switch javascript-carousel
+  155  git status
+  156  git add .
+  157  git commit -m "HTML is done and CSS is half done."
+  158  git status
+  159  git add .
+  160  git commit -m "Completed HTML and CSS."
+  161  git status
+  162  git add .
+  163  git commit -"Completed HTML, CSS and part of JS docs."
+  164  git status
+  165  git add .
+  166  git commit -m "Completed javascript-carousel."
+  167  git status
+  168  git push origin javascript-carousel
+  169  git switch master
+  170  git pull origin master
+  171  git status
+  172  pull origin master
+  173  git pull origin master
+  174  cd ..
+  175  dir
+  176  cd ~/repos
+  177  dir
+  178  git clone https://github.com/bookaneers/driving-game
+  179  cd driving-game
+  180  npm ci
+  181  git status
+  182  git add .
+  183  git commit -m "HTML and CSS partially done."
+  184  git status
+  185  git add .
+  186  git commit -m "HTML and CSS partially done."
+  187  git add .
+  188  git commit -m "HTML and CSS partially done."
+  189  exit
+  190  cd ~/repos
+  191  dir
+  192  cd driving-game/
+  193  git add .
+  194  git commit -m "Completed JS partially."
+  195  git add .
+  196  git commit -m "Completed JS partially."
+  197  git add .
+  198  git commit -m "Completed JS partially."
+  199  exit
+  200  cd repos
+  201  dir
+  202  cd driving-game/
+  203  git add .
+  204  git commit -m "Completed driving-game."
+  205  git pull origin master
+  206  git status
+  207  git push origin master
+  208  git status
+  209  git push
+  210  git status
+  211  git branch --list
+  212  dir
+  213  cd ..
+  214  dir
+  215  cd m2-0621-code-solutions/
+  216  dir
+  217  git status
+  218  git pull origin master
+  219  git branch http-messages
+  220  git branch --list
+  221  git switch http-messages
+  222  dir
+  223  cd http-messages/
+  224  http://example.com
+  225  http http:example.com
+  226  http http://example.com
+  227  http --verbose http://example.com
+  228  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+  229  http --body GET https://example.com > index.html
+  230  dir
+  231  cd .
+  232  cd/
+  233  cd ~
+  234  dir
+  235  cd repos
+  236  dir
+  237  cd m2-0621-code-solutions/
+  238  git status
+  239  git add .
+  240  git commit -m "Completed http-messages."
+  241  git push origin http-messages
+  242  dir
+  243  git status
+  244  git switch master
+  245  git pull origin master
+  246  git status
+  247  git branch javascript-ajax
+  248  git switch javascript-ajax
+  249  git status
+  250  clear
+  251  git status
+  252  cd ..
+  253  exit
+  254  cd ~/repos
+  255  cd m2-0621-code-solutions/
+  256  dir
+  257  cd javascript-ajax/
+  258  git status
+  259  cd ..
+  260  dir
+  261  git status
+  262  git add .
+  263  git status
+  264  git commit -m "Completed javascript-ajax."
+  265  git push origin javascript-ajax
+  266  git switch master
+  267  git status
+  268  git pull origin master
+  269  git status
+  270  exit
+  271  cd ~/repos
+  272  dir
+  273  git cd ~/repos
+  274  git clone git@github.com:bookaneers/ajax-project.git
+  275  cd ajax-project
+  276  npm ci
+  277  dir
+  278  git branch --list
+  279  git switch master
+  280  git branch issue-1-10-random creatures
+  281  git branch issue-1-10-random-creatures
+  282  git branch --list
+  283  git switch issue-1-10-random-creatures
+  284  git status
+  285  git add .
+  286  git commit -m "Almost completed HTML and CSS."
+  287  git add .
+  288  git commit -m "Almost completed HTML and CSS."
+  289  git status
+  290  git add .
+  291  git commit "Completed Issue 1."
+  292  git commit -m "Completed Issue 1."
+  293  git status
+  294  git add .
+  295  git commit -m "Completed Issue 1."
+  296  git branch --list
+  297  git pull origin issue-1-10-random-creatures
+  298  git status
+  299  git pull origin issue1-10-random-creatures
+  300  git push origin issue-1-10-random-creatures
+  301  git switch master
+  302  git pull origin master
+  303  git branch --list
+  304  git branch issue-2-user-choose-pokemon-and-weapon
+  305  git switch issue-2-user-choose-pokemon-and-weapon
+  306  git status
+  307  git add .
+  308  git commit -m "Completed issue-2-user-choose-pokemon-and-weapon."
+  309  git status
+  310  git add .
+  311  git commit -m "Completed issue-2-user-choose-pokemon-and-weapon."
+  312  git push origin issue-2-user-choose-pokemon-and-weapon
+  313  git switch master
+  314  git pull origin master
+  315  git status
+  316  cd ..
+  317  dir
+  318  cd ~/repos
+  319  dir
+  320  cd m2-0621-code-solutions/
+  321  dir
+  322  git status
+  323  git switch master
+  324  git pull origin master
+  325  git branch es6-const-let
+  326  git switch es6-const-let
+  327  git status
+  328  git add .
+  329  git commit -m "Completed es6-const-let."
+  330  git push origin es6-const-let
+  331  git switch master
+  332  cd ..
+  333  cd.
+  334  cd . .
+  335  cd m2-0621-code-solutions/
+  336  git branch --list
+  337  git switch es6-const-let
+  338  git add .
+  339  git commit -m "Completed and updated es6-const-let."
+  340  git push origin es6-const-let
+  341  git status
+  342  git switch master
+  343  git status
+  344  git switch es6-const-let
+  345  git status
+  346  git add .
+  347  git commit -m "Completed es6-const-let."
+  348  git push origin es6-const-let
+  349  git switch master
+  350  git status
+  351  git pull origin master
+  352  git status
+  353  git branch es6-template-literals
+  354  git switch es6-template-literals
+  355  git status
+  356  git add . 
+  357  git commit -m "Completed es6-template-literals."
+  358  git push origin es6-template-literals
+  359  git switch es6-template-literals
+  360  git add .
+  361  git commit -m "Completed and updated es6-template-literals."
+  362  git push origin es6-template-literals
+  363  git switch master
+  364  git pull origin master
+  365  git status
+  366  exit
+  367  cd ~/repos
+  368  cd m2-0621-code-solutions/
+  369  git status
+  370  git branch --list
+  371  git pull origin master
+  372  git branch es6-destructuring
+  373  git switch es6-destructuring
+  374  git add .
+  375  git commit -m "Completed es6-destructuring."
+  376  git push origin es6-destructuring
+  377  git status
+  378  git switch master
+  379  git status
+  380  git branch es6-arrow-functions
+  381  git switch es6-arrow-functions
+  382  git add .
+  383  git commit -m "Completed es6-arrow-functions."
+  384  git push origin es6-arrow-functions
+  385  git switch master
+  386  git switch es6-destructuring
+  387  git status
+  388  git add -
+  389  git add .
+  390  git commit "Completed and updated es6-destructuring."
+  391  git push origin es6-destructuring
+  392  git status
+  393  git switch master
+  394  git status
+  395  git switch master
+  396  git status
+  397  git commit "Completed and updated es6-destructuring."
+  398  git status
+  399  git commit -m "Completed es6-destructuring."
+  400  git status
+  401  git switch master
+  402  git switch es6-destructuring
+  403  git push origin es6-destructuring
+  404  git switch master
+  405  exit
+  406  clear
+  407  cd ~/repos
+  408  dir
+  409  cd m2-0621-code-solutions/
+  410  git status
+  411  git pull origin master
+  412  git branch --list
+  413  git switch es6-arrow-functions
+  414  git status
+  415  git add .
+  416  git commit -m "Completed es6-arrow-functions."
+  417  git push origin es6-arrow-functions
+  418  git status
+  419  git switch master
+  420  git branch command-line-basics
+  421  git switch command-line-basics
+  422  git status
+  423  pwd
+  424  cd command-lines-basics
+  425  pwd
+  426  git switch master
+  427  cd ..
+  428  pwd
+  429  cd m2-0621-code-solutions/
+  430  cd command-line-basics
+  431  pwd
+  432  cd ..
+  433  cd .
   434  cd ~/repos
   435  cd command-line-basics
   436  dir
@@ -57,3 +490,161 @@
   489  cat and-then.txt no-and-then.txt
   490  history
   491  history > command-history.txt
+  492  ls
+  493  clear
+  494  history
+  495  git status
+  496  git add .
+  497  git status
+  498  git commit -m "Completed command-line-basics."
+  499  git pull origin master
+  500  git status
+  501  git push origin master
+  502  git status
+  503  status
+  504  git status
+  505  cd .
+  506  cd ..
+  507  ls
+  508  git pull origin master
+  509  exit
+  510  cd ~/repos
+  511  ls
+  512  cd m2-0621-code-solutions/
+  513  ls
+  514  git switch command-line-basics 
+  515  switch master
+  516  git switch master
+  517  ls
+  518  git branch --list
+  519  cd command-line-basics/
+  520  ls
+  521  cd ..
+  522  git branch --list
+  523  git status
+  524  ls
+  525  git pull origin master
+  526  git branch node-intro
+  527  git switch node-intro
+  528  node -- version
+  529  node --version
+  530  node hello-node.js
+  531  node
+  532  node hello-node.js
+  533  node node-intro/hello-node.js
+  534  git status
+  535  clear
+  536  node node-intro/hello-node.js
+  537  node
+  538  clear
+  539  node intro-node/hello-node.js
+  540  clear
+  541  node node-intro/hello-node.js
+  542  node
+  543  clear
+  544  git status
+  545  git add .
+  546  git commit -m "Completed node-intro."
+  547  git push origin node-intro
+  548  git switch master
+  549  clear
+  550  ls
+  551  git branch node-process-argv
+  552  git switch node-process-argv
+  553  node node-process-argv/process.js
+  554  node node-process-argv/all-arguments.js
+  555  node node-process-argv/echo.js 'Hello'
+  556  clear
+  557  node node-process-argv/echo.js 'Hello, hello"
+clear
+  558  clear
+  559  node node-process-argv/echo.js 'Hello, hello'
+  560  node node-process-argv/echo.js 'Comand line arguments'
+  561  clear
+  562  node node-process-argv/echo.js 'Comand line arguments!'
+  563  node node-process-argv/echo.js 'Hello, computer!'
+  564  node node-process-argv/echo.js 'No, You are a computer.'
+  565  node node-process-argv/echo.js 'Stop that, Silly'
+  566  git status
+  567  git add .
+  568  git status
+  569  git commit -m "Completed node-process-argv"
+  570  git push origin node-process-argv
+  571  git switch master
+  572  git status
+  573  git pull origin master
+  574  git branch node-process
+  575  swtich node-process
+  576  git switch node-process
+  577  git status
+  578  git add .
+  579  git commit -m "Working on node-process."
+  580  git status
+  581  git switch master
+  582  git status
+  583  git branch --list
+  584  git switch comand-line-basics
+  585  git switch command-line-basics
+  586  git status
+  587  pwd
+  588  cd command-line-basics
+  589  man man
+  590  cat laziness.txt
+  591  cst laziness.tex/inpatience.txt/hubris.txt
+  592  cat laziness.tex/inpatience.txt/hubris.txt
+  593  man cat
+  594  cat laziness.text/impatience.txt/hubris.txt
+  595  cat laziness.txt
+  596  cat laziness.txt impatience.txt
+  597  cat laziness.text impatience.txt hubris.txt
+  598  cat laziness.txt impatience.txt hubris.txt
+  599  ls
+  600  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  601  ls
+  602  ls -a
+  603  ls -F
+  604  ls lfz-staff/
+  605  ls -aF lfz-staff > lfz-staff/contents.txt
+  606  ls
+  607  ls lfz-staff
+  608  cat lfz-staff/contents.txt
+  609  pwd
+  610  pwd > i-was-here.txt
+  611  ls
+  612  cat i-was-here.txt
+  613  echo 'Hello, World!' > hello.txt
+  614  cat hello.txt
+  615  las
+  616  ls
+  617  touch tag-youre-ir.txt
+  618  touch snoot/boop.txt
+  619  ls snoot/
+  620  mkdir parent
+  621  ls
+  622  mkdir -p parent child grandchild
+  623  ls
+  624  ls parent/
+  625  ls snoot/
+  626  mkdir -p parent/child/grandchild
+  627  ls parent
+  628  ls parent/child
+  629  ls -a
+  630  ls -a parent/child/granchild
+  631  ls parent
+  632  ls -a parent
+  633  ls -a parent/child
+  634  ls -a parent/child/granchild
+  635  ls -a parent/child/grandchild
+  636  ls
+  637  mv pokiemans pokemon
+  638  ls
+  639  rm lol.txt
+  640  ls
+  641  rm -r kill-me/
+  642  ls
+  643  cp and-then.txt no-and-then.txt
+  644  cat and-then.txt no-and-then.txt
+  645  man history
+  646  history
+  647  clear
+  648  history > command-history.txt

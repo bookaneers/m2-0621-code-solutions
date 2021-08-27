@@ -3,8 +3,6 @@ const app = express();
 
 app.use(express.json()); // middleware
 
-
-// GET a list of notes =====
 app.get('/api/notes', (req, res) => {
 
   var fs = require('fs');
@@ -13,17 +11,12 @@ app.get('/api/notes', (req, res) => {
 
     const arrayOfData = [];
     const database = JSON.parse(data);
-
-    for (var key in database.notes) {
-      arrayOfData.push(database.notes[key]);
-    }
+    for (var key in database.notes) { arrayOfData.push(database.notes[key]); }
 
     res.status(200).send(arrayOfData);
   });
 });
-// ENF of GET a list of notes =====
 
-// GET a single note =====
 app.get('/api/notes/:id', (req, res) => {
 
   const idNumber = Number(req.params.id);
@@ -33,27 +26,16 @@ app.get('/api/notes/:id', (req, res) => {
 
   var fs = require('fs');
   fs.readFile('data.json', 'utf8', (err, data) => {
-    if (err) throw err;
-
-    const arrayOfData = [];
     const database = JSON.parse(data);
-
-    for (var key in database.notes) { arrayOfData.push(database.notes[key]); }
-
-    for (var i = 0; i < arrayOfData.length; i++) {
-      if (arrayOfData[i].id === idNumber) return res.status(200).send(arrayOfData[i]);
-    }
-
-    return res.status(400).json({ error: `cannot find note with id ${idNumber}` });
+    if (err) throw err;
+    if (database.notes[idNumber]) res.status(200).json(database.notes[idNumber]);
+    else res.status(404).json({ error: `cannot find note with id ${idNumber}` });
   });
 });
-// END of GET a single note =====
 
-// POST a new note =====
 app.post('/api/notes', (req, res) => {
 
-  const userContent = req.body.content;
-  if (!userContent) return res.status(400).json({ error: 'content is a required field' });
+  if (!req.body.content) return res.status(400).json({ error: 'content is a required field' });
 
   var fs = require('fs');
   fs.readFile('data.json', 'utf8', (err, data) => {
@@ -61,23 +43,17 @@ app.post('/api/notes', (req, res) => {
 
     const database = JSON.parse(data);
     const newId = database.nextId;
-
     const newContent = { id: newId, content: req.body.content };
-    const newNote = { newId: newContent };
-
     database.notes[newId] = newContent;
     database.nextId++;
 
     fs.writeFile('data.json', JSON.stringify(database), 'utf8', function (err) {
-      if (err) { return res.status(500).json({ error: err });}
-      else { return res.status(201).send(database.notes[newId]); }
+      if (err) return res.status(500).json({ error: 'An unexpected error occurred.' });
+      else return res.status(201).json(database.notes[newId]);
     });
-
   });
 });
-// END of POST a new note =====
 
-// DELETE a new note =====
 app.delete('/api/notes/:id', (req, res) => {
 
   const idNumber = Number(req.params.id);
@@ -89,60 +65,42 @@ app.delete('/api/notes/:id', (req, res) => {
   fs.readFile('data.json', 'utf8', (err, data) => {
     if (err) throw err;
 
-    const arrayOfData = [];
     const database = JSON.parse(data);
-    for (var key in database.notes) { arrayOfData.push(database.notes[key]); }
+    console.log(database.notes[idNumber])
+    if (database.notes[idNumber]) delete database.notes[idNumber];
+    else return res.status(404).json({ error: `cannot find note with id ${idNumber}` });
 
-    // let fileWritten = false;
-    for (var i = 0; i < arrayOfData.length; i++) {
-      if (arrayOfData[i].id === idNumber) {
-
-        delete database.notes[req.params.id];
-
-        fs.writeFile('data.json', JSON.stringify(database), 'utf8', function (err) {
-          // fileWritten = true;
-          if (err) { return res.status(500).json({ error: err }); }
-          else { return res.status(204); }
-        });
-      }
-    }
-    // if (!fileWritten) return res.status(404).json({ error: `cannot find note with id ${idNumber}` });
+    fs.writeFile('data.json', JSON.stringify(database), 'utf8', function (err) {
+      if (err) return res.status(500).json({ error: 'An unexpected error occurred.' });
+      else return res.status(204).json({});
+    });
   });
 });
-// =====
 
-
-// PUT a new note =====
 app.put('/api/notes/:id', (req, res) => {
+
   const idNumber = Number(req.params.id);
   if (!Number.isInteger(idNumber) || idNumber <= 0) {
     return res.status(400).json({ error: 'id must be a positive integer' });
   }
+
   const userContent = req.body.content;
   if (!userContent) {
     return res.status(400).json({ error: 'content is a required field' });
   }
+
   var fs = require('fs');
   fs.readFile('data.json', 'utf8', (err, data) => {
     if (err) throw err;
-    const arrayOfData = [];
+
     const database = JSON.parse(data);
-    for (var key in database.notes) {
-      arrayOfData.push(database.notes[key]);
-    }
-    for (var i = 0; i < arrayOfData.length; i++) {
-      if (String(arrayOfData[i].id) === req.params.id) {
-        const result = database.notes[req.params.id];
-        database.notes[req.params.id].content = userContent;
-        fs.writeFile('data.json', JSON.stringify(database), 'utf8', function (err) {
-          if (err) {
-            return res.status(500).json({ error: err });
-          }
-        });
-        return res.status(200).send(database.notes[req.params.id]);
-      }
-    }
-    return res.status(400).json({ error: `cannot find note with id ${idNumber}` });
+    if (database.notes[idNumber]) database.notes[idNumber].content = userContent;
+    else res.status(404).json({ error: `cannot find note with id ${idNumber}` });
+
+    fs.writeFile('data.json', JSON.stringify(database), 'utf8', function (err) {
+      if (err) return res.status(500).json({ error: 'An unexpected error occurred.'});
+      else return res.status(200).json(database.notes[idNumber]);
+    });
   });
 });
 

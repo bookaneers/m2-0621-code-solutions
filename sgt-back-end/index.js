@@ -73,7 +73,7 @@ app.get('/api/grades/:gradeId', (req, res, next) => {
         error: 'An unexpected error occurred.'
       });
     });
-})
+});
 
 
 // GET ALL
@@ -95,9 +95,9 @@ app.get('/api/grades', (req, res, next) => {
         error: 'An unexpected error occurred.'
       });
     });
-})
+});
 
 
 app.listen(3000,() => {
-  console.log('Listening on port 3000');
+  console.log('Listening on port 3000...');
 });

@@ -57,8 +57,12 @@ app.get('/api/grades/:gradeId', (req, res, next) => {
 app.get('/api/grades', (req, res, next) => {
 
   const sql = `
-    select *
-      from "grades"
+    select "gradeId",
+    "name",
+    "course",
+    "score",
+    "createdAt"
+    from "grades"
   `;
 
   db.query(sql)
@@ -91,7 +95,7 @@ app.post('/api/grades', (req, res, next) => {
 
   if (!Number.isInteger(scoreBody) || (scoreBody > 100 || scoreBody <= 0)) {
     res.status(400).json({
-      error: `"gradeId" must be a positive integer between 0 and 100.`
+      error: `"score" must be a positive integer between 0 and 100.`
     });
     return;
   }
